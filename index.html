@@ -1,39 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ISCCT - Indian Society of Critical Care Technologists</title>
+
 <style>
 body{
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-background:#f5f5f5;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
 }
+
 header{
-background:#b30000;
-color:white;
-padding:20px;
-text-align:center;
+    background:#b30000;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
 }
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
 section{
-padding:20px;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
 }
-.button{
-display:inline-block;
-background:#b30000;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:5px;
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
+
+.btn{
+    background:#b30000;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+}
+
 footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -41,26 +81,53 @@ padding:15px;
 <p>Uniting Critical Care Professionals Across India</p>
 </header>
 
+<nav>
+<a href="#about">About</a>
+<a href="#membership">Membership</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <section>
+
+<div class="card" id="about">
 <h2>About ISCCT</h2>
 <p>
 ISCCT is a professional association dedicated to supporting,
 representing and advancing Critical Care Technologists throughout India.
 </p>
+</div>
 
+<div class="card" id="membership">
 <h2>Membership</h2>
-<p>Join our growing community of Critical Care Technologists.</p>
+<p>
+Join our growing community of Critical Care Technologists and help
+strengthen our profession across India.
+</p>
 
-<a class="button" href="https://chat.whatsapp.com/KoE3DnXMBR06RHFpEKFPGN?mode=gi_t">
+<a class="btn"
+href="https://chat.whatsapp.com/KoE3DnXMBR06RHFpEKFPGN">
 Join WhatsApp Group
 </a>
-</section>
+</div>
 
-<section>
+<div class="card">
+<h2>Objectives</h2>
+<ul>
+<li>Professional Recognition</li>
+<li>Career Development</li>
+<li>Education & Training</li>
+<li>Networking Opportunities</li>
+<li>Advocacy for Critical Care Technologists</li>
+</ul>
+</div>
+
+<div class="card" id="contact">
 <h2>Contact Us</h2>
 <p>Email: info@iscct.in</p>
-<p>Phone: 6379119408</p>
-<p>Chennai, Tamil Nadu, India</p>
+<p>Phone: +91 6379119408</p>
+<p>Tamil Nadu, India</p>
+</div>
+
 </section>
 
 <footer>
